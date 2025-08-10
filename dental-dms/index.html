@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dental DMS</title>
+    <meta name="description" content="Dental Management System - Patients, Appointments, Billing, Inventory, Staff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
+            colors: {
+              primary: {
+                50: "#eff6ff",
+                100: "#dbeafe",
+                200: "#bfdbfe",
+                300: "#93c5fd",
+                400: "#60a5fa",
+                500: "#3b82f6",
+                600: "#2563eb",
+                700: "#1d4ed8",
+                800: "#1e40af",
+                900: "#1e3a8a",
+              },
+            },
+            boxShadow: {
+              soft: "0 5px 25px -10px rgba(0,0,0,0.15)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html, body { height: 100%; }
+      body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+      .scrollbar-thin::-webkit-scrollbar { height: 6px; width: 6px; }
+      .scrollbar-thin::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+      .scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+      .modal-backdrop { background: rgba(15, 23, 42, 0.6); }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <div id="app" class="h-full">
+      <!-- App is rendered by app.js -->
+    </div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
